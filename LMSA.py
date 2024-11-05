@@ -85,35 +85,11 @@ class CoordAtt(nn.Module):
 
         return out
 
-class LMSA(nn.Module):
-    def __init__(self, c1, c2, k=2):
-        super().__init__()
 
-        self.c = c1 // k
-        self.cbs1 = Conv(c1, self.c)
 
-        self.dw3 = Conv(self.c, self.c, 3, 1,  1, g=self.c)
-        self.dw5 = Conv(self.c, self.c, 5, 1,  2, g=self.c)
-        self.dw7 = Conv(self.c, self.c, 7, 1,  3, g=self.c)
+# The key code of this module will be publicly released after the paper is published.
 
-        self.ca = CoordAtt(4 * self.c)
 
-        self.cbs = Conv(4 * self.c, c2)
-
-    def forward(self, x):
-        x = self.cbs1(x)
-
-        x3 = self.dw3(x)
-        x5 = self.dw5(x)
-        x7 = self.dw7(x)
-
-        xn = torch.cat([x, x3, x5, x7], dim=1)
-
-        xn = self.ca(xn)
-
-        xn = self.cbs(xn)
-
-        return xn
 
 class Bottleneck_LMSA(nn.Module):
     """Standard bottleneck."""

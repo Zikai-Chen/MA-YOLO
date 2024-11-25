@@ -4,7 +4,7 @@ Enhanced Multi-Scale Attentional Remote Sensing Detector
 
 Usage Guidelines
 ===
-Requirements.txt contains the required environment configuration. You can configure the yolo environment through the following code:
+Requirements.txt contains the required environment configuration, and the yolo environment can be configured through the following code:
 pip install -r requirements.txt
 
 

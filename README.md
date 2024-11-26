@@ -9,6 +9,9 @@ Requirements.txt contains the required environment configuration, and the yolo e
 The cfg file contains the YAML file of the dataset and the YAML file of the model.  
 nn.mymodules contains the innovative modules of the MA-YOLO model.
 
+Detailed Documentation
+===
+
 
 Datasets
 ===

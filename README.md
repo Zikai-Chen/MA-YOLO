@@ -13,7 +13,7 @@ Detailed Documentation
 ===
 First, download the yolov8 related code and configure the required environment. Then, import the MA-YOLO module in the required location of the model and create the dataset yaml file and model yaml file before running. The following is the model training code:  
 
-、、、
+```
 import warnings  
 warnings.filterwarnings('ignore')  
 from ultralytics import YOLO  

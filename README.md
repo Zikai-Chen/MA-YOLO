@@ -12,11 +12,10 @@ nn.mymodules contains the innovative modules of the MA-YOLO model.
 Detailed Documentation
 ===
 First, download the yolov8 related code and configure the required environment. Then, import the MA-YOLO module in the required location of the model and create the dataset yaml file and model yaml file before running. The following is the model training code:  
-
-
-import warnings
-warnings.filterwarnings('ignore')
-from ultralytics import YOLO
+  
+import warnings  
+warnings.filterwarnings('ignore')  
+from ultralytics import YOLO  
 
 if __name__ == '__main__':
     model = YOLO(r'E:\PycharmProjects\yolov8.2\ultralytics-8.2.48\ultralytics-8.2.48\ultralytics\cfg\models\DIOR\yolov8n.yaml')

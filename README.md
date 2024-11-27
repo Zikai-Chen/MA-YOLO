@@ -2,7 +2,7 @@ MA-YOLO
 ===
 Enhanced Multi-Scale Attentional Remote Sensing Detector
 
-Usage Guidelines
+Usage Guideline
 ===
 Yolov8 related codes can be obtained from the following links:[https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics/tree/v8.2.48)  
 Requirements.txt contains the required environment configuration, and the yolo environment can be configured through the following code:pip install -r requirements.txt  
